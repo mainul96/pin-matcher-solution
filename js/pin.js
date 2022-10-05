@@ -44,14 +44,14 @@ document.getElementById('calculator').addEventListener('click', function(event){
    }
 })
 
-document.getElementById('btn-submit').addEventListener('click', function(e){
+document.getElementById('btn-submit').addEventListener('click', function(){
     const generatePin = document.getElementById('pin-field');
     const previousGeneratePin = generatePin.value;
     if(previousGeneratePin ==''){
         alert('please pin generate');
         pinFailureMassage.style.display="none";
     }
-    generatePin.value='';
+    
 
     const inputFieldSubmit = document.getElementById('input-field');
     const previousInputFieldValue = inputFieldSubmit.value;
